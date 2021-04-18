@@ -1,0 +1,273 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 22,
+        "name": "Book a hotel and cancel the booking user made",
+        "description": "",
+        "id": "verifying-adacitinhotel-app-with-multiple-scenarios;book-a-hotel-and-cancel-the-booking-user-made;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 19414707200,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User on Adacitin login page",
+            "match": {
+              "location": "SearchHotel.userOnAdacitinLoginPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 7050540300,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Enter Valid username and password \"jerrykarthikeyan\",\"qwerty\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"jerrykarthikeyan\"",
+                  "offset": 34
+                },
+                {
+                  "val": "\"qwerty\"",
+                  "offset": 53
+                }
+              ],
+              "location": "SearchHotel.enterValidUsernameAndPassword(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4022454800,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User should enter \"Sydney\",\"Hotel Sunshine\",\"Double\",\"10 - Ten\",\"07/04/2021\",\"08/04/2021\" ,\"1 - One\" and \"3 - Three\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Sydney\"",
+                  "offset": 18
+                },
+                {
+                  "val": "\"Hotel Sunshine\"",
+                  "offset": 27
+                },
+                {
+                  "val": "\"Double\"",
+                  "offset": 44
+                },
+                {
+                  "val": "\"10 - Ten\"",
+                  "offset": 53
+                },
+                {
+                  "val": "\"07/04/2021\"",
+                  "offset": 64
+                },
+                {
+                  "val": "\"08/04/2021\"",
+                  "offset": 77
+                },
+                {
+                  "val": "\"1 - One\"",
+                  "offset": 91
+                },
+                {
+                  "val": "\"3 - Three\"",
+                  "offset": 105
+                }
+              ],
+              "location": "SearchHotel.userShouldEnterAnd(String,String,String,String,String,String,String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2629701200,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User should verify on select hotel page \"Adactin.com - Select Hotel\" and user should select radio button and continue button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Adactin.com - Select Hotel\"",
+                  "offset": 40
+                }
+              ],
+              "location": "SearchHotel.userShouldVerifyOnSelectHotelPageAndUserShouldSelectRadioButtonAndContinueButton(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 514527700,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User should select \"Yasodaha\", \"K\" and \"Mosakuttipalayam\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Yasodaha\"",
+                  "offset": 19
+                },
+                {
+                  "val": "\"K\"",
+                  "offset": 31
+                },
+                {
+                  "val": "\"Mosakuttipalayam\"",
+                  "offset": 39
+                }
+              ],
+              "location": "SearchHotel.userShouldSelectAnd(String,String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 584372500,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User should enter credit card details\"\u003cCreditCardNumber\u003e\",\"\u003cCreditCardType\u003e\",\"\u003cExpiryMonth\u003e\",\"\u003cExpiryYear\u003e\" and \"\u003ccvv\u003e\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\u003cCreditCardNumber\u003e\"",
+                  "offset": 37
+                },
+                {
+                  "val": "\"\u003cCreditCardType\u003e\"",
+                  "offset": 58
+                },
+                {
+                  "val": "\"\u003cExpiryMonth\u003e\"",
+                  "offset": 77
+                },
+                {
+                  "val": "\"\u003cExpiryYear\u003e\"",
+                  "offset": 93
+                },
+                {
+                  "val": "\"\u003ccvv\u003e\"",
+                  "offset": 112
+                }
+              ],
+              "location": "SearchHotel.userShouldEnterCreditCardDetailsAnd(String,String,String,String,String,DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "CreditCardNumber",
+                  "CreditCardType",
+                  "ExpiryMonth",
+                  "ExpiryYear",
+                  "cvv"
+                ]
+              },
+              {
+                "cells": [
+                  "4569789665891598",
+                  "VISA",
+                  "December",
+                  "2022",
+                  "123"
+                ]
+              },
+              {
+                "cells": [
+                  "4569789665891264",
+                  "Master Card",
+                  "January",
+                  "2022",
+                  "123"
+                ]
+              },
+              {
+                "cells": [
+                  "4569789664598687",
+                  "American Express",
+                  "December",
+                  "2025",
+                  "123"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 7693531200,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "User should get the order number from same page and verify the message \"Booking Confirmation\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Booking Confirmation\"",
+                  "offset": 71
+                }
+              ],
+              "location": "SearchHotel.userShouldGetTheOrderNumberFromSamePageAndVerifyTheMessage(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#order_no\"}\n  (Session info: chrome\u003d89.0.4389.128)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027PANNEERSELVAM\u0027, ip: \u0027192.168.1.29\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002715.0.1\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.128, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\\Users\\karth\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50074}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 818716866a37b329abc0e31b146bda6e\n*** Element info: {Using\u003did, value\u003dorder_no}\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)\r\n\tat org.openqa.selenium.By$ById.findElement(By.java:188)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy17.getText(Unknown Source)\r\n\tat org.sample.SearchHotel.clickBookedItineryLinkAndWithHelpOfTheOrderNumberCancelTheOrderUserMadeAndHandleTheAlertThrownByThePage(SearchHotel.java:199)\r\n\tat ✽.click Booked Itinery link and with help of the order number , cancel the order user made and handle the alert thrown by the page(C:/Users/karth/eclipse-framework/FramworkCucumber/src/test/resources/Feature/CancelBooking.feature:17)\r\n",
+              "duration": 41945905500,
+              "status": "failed"
+            },
+            "line": 17,
+            "name": "click Booked Itinery link and with help of the order number , cancel the order user made and handle the alert thrown by the page",
+            "match": {
+              "location": "SearchHotel.clickBookedItineryLinkAndWithHelpOfTheOrderNumberCancelTheOrderUserMadeAndHandleTheAlertThrownByThePage()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 26000,
+              "status": "skipped"
+            },
+            "line": 18,
+            "name": "After cancelling the order verfiy the message shown on the page \"The booking has been cancelled.\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"The booking has been cancelled.\"",
+                  "offset": 64
+                }
+              ],
+              "location": "SearchHotel.afterCancellingTheOrderVerfiyTheMessageShownOnThePage(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@reg"
+          }
+        ]
+      }
+    ],
+    "name": "Verifying Adacitinhotel app with multiple scenarios",
+    "description": "",
+    "id": "verifying-adacitinhotel-app-with-multiple-scenarios",
+    "keyword": "Feature",
+    "uri": "C:/Users/karth/eclipse-framework/FramworkCucumber/src/test/resources/Feature/CancelBooking.feature",
+    "tags": []
+  }
+]
